@@ -2,12 +2,15 @@ function fetchBooks() {
   // To pass the tests, don't forget to return your fetch!
 
   //fetches the books endpoint of API
-  fetch("https://anapioficeandfire.com/api/books")
+  return fetch("https://anapioficeandfire.com/api/books")
   //converts to JS
   .then(response => response.json())
   // runs the renderBooks function for all of the book
   .then(titles => renderBooks(titles))
+
+
   
+
 }
 
 //uses the all the books as a parameter
